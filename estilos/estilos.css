@@ -1,5 +1,6 @@
 *{
-    font-family: 'Montserrat';font-size: 22px;
+    font-family: 'Montserrat';
+    font-size: 22px;
     
 }
 body{
@@ -73,7 +74,36 @@ body{
     background: none;
     border: white 3px solid;
 }
-
+.textRow{
+    
+    padding: 33px;
+    color: white;
+    top: 123px;
+    position: relative;
+    z-index: 2;
+}
+.textoInfoImg{
+    margin: 0 auto;
+    padding: 15px;
+}
+.textoInfoImg h1{
+    margin: 0 auto;
+    font-size: 56px;
+    font-weight: bold;
+}
+.textoInfoImg h3{
+    margin: 0 auto;
+}
+.moreDetailsBtn{
+    margin-top: 25px;
+    padding: 15px;
+}
+.moreDetailsBtn a{
+    outline: none;
+    text-decoration: none;
+    color:white;
+    font-weight: light;
+}
 
 /* Media Queries para responsividad */
 /* Nos ayuda a que las propiedades se ajusten al tamaño del dispositivo, pueden facilitarlo con un framework como BOOTSRAP ó TAILWIND */
@@ -86,7 +116,7 @@ body{
         height: 45px;
     }
 }
-
+/* Inicio media display */
 @media (max-width: 768px) {
     .header {
         width: 90%;
