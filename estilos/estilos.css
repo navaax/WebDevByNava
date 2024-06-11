@@ -105,6 +105,42 @@ body{
     font-weight: light;
 }
 
+
+/* Tarjetas Estilos */
+.rowCard{
+    margin: 15px;
+    width: 95%;
+    height: 50%;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    /* justify-items: center; */
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.tarjeta{
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    width: 362px;
+    height: 398px;   
+}
+.tarjeta img{
+    border-radius: 20px;
+    width: 361px;
+    height: 262px;
+}
+
+
+
+/* Fin tarjetas estilo */
+
+
+
 /* Media Queries para responsividad */
 /* Nos ayuda a que las propiedades se ajusten al tamaño del dispositivo, pueden facilitarlo con un framework como BOOTSRAP ó TAILWIND */
 @media (max-width: 1200px) {
