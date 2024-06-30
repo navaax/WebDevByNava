@@ -1,6 +1,11 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #000000;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    
+}
+body{
+    margin: 0 auto;
+    background-color: #0C0D11;
 }
 
 .contenedor{
@@ -17,6 +22,169 @@
     width: 50%;
     height: 100%;
     border-radius: 0 0 20px 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); /* Efecto borroso tipo cristal */
     position: relative;
+}
+.header{
+    background: none;
+    padding: 10px;
+    margin: 11px;
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+    z-index: 2;
+    position: fixed;
+}
+.imgProfile{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 66px;
+    height: 96px;
+    border-radius: 199px;
+}
+.navList{
+    padding-left: 14px;
+    width: 100%;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.navList li{
+    list-style: none;
+    outline: none;
+    color: rgb(235, 235, 235);
+    background-color: #000;
+    height: 53px;
+    width: 125px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.navList a{
+    text-decoration: none;
+}
+.check{
+    background: none;
+    border: white 3px solid;
+}
+.textRow{
+    
+    padding: 33px;
+    color: white;
+    top: 123px;
+    position: relative;
+    z-index: 2;
+}
+.textoInfoImg{
+    margin: 0 auto;
+    padding: 15px;
+}
+.textoInfoImg h1{
+    margin: 0 auto;
+    font-size: 56px;
+    font-weight: bold;
+}
+.textoInfoImg h3{
+    margin: 0 auto;
+}
+.moreDetailsBtn{
+    margin-top: 25px;
+    padding: 15px;
+}
+.moreDetailsBtn a{
+    outline: none;
+    text-decoration: none;
+    color:white;
+    font-weight: light;
+}
+
+
+/* Tarjetas Estilos */
+.rowCard{
+    margin: 15px;
+    width: 95%;
+    height: 50%;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    /* justify-items: center; */
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.tarjeta{
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    width: 362px;
+    height: 398px;   
+}
+.tarjeta img{
+    border-radius: 20px;
+    width: 361px;
+    height: 262px;
+}
+
+
+
+/* Fin tarjetas estilo */
+
+
+
+/* Media Queries para responsividad */
+/* Nos ayuda a que las propiedades se ajusten al tamaño del dispositivo, pueden facilitarlo con un framework como BOOTSRAP ó TAILWIND */
+@media (max-width: 1200px) {
+    .header {
+        width: 70%;
+    }
+    .navList li {
+        width: 100px;
+        height: 45px;
+    }
+}
+/* Inicio media display */
+@media (max-width: 768px) {
+    .header {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navList {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    .navList li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .efectoBlur {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+    .navList li {
+        width: 100%;
+        height: 40px;
+    }
+    .imgProfile {
+        width: 50px;
+        height: 75px;
+    }
 }

@@ -1,0 +1,6 @@
+Estructura html ++
+body
+contenedores
+diseño css
+diferentes elementos del html para finalizar la vista 
+
