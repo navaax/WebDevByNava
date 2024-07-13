@@ -1,0 +1,8 @@
+*{
+    margin: 0 auto;
+}
+.contenedor{
+    display: grid;
+    width: 100%;
+
+}
